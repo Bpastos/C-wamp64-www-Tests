@@ -1,0 +1,1 @@
+SELECT * FROM `jeux_video` WHERE 1
