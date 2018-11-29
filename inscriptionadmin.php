@@ -1,5 +1,5 @@
-<?php session_start(); ?>
-  <button="float: right;"class = ".bouton"><a href="http://localhost/tests/acceuil.php">Accueil</a>
+<?php include('navbar.php'); ?>
+  <button="float: right;"class = ".bouton"><a href="http://localhost/tests/accueil.php">Accueil</a>
      </button>
        <br>
        <br>
@@ -46,6 +46,8 @@ catch(Exception $e)
 if (isset($_POST['admin']) and isset($_POST['pass'])
     and !empty($_POST['admin']) and !empty($_POST['pass']))
    // On a l'admin et le pass
+
+
 
        
 {

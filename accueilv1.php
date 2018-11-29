@@ -1,4 +1,7 @@
-  <?php session_start()?>
+<?php session_start(); ?>
+
+
+
 
    <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -12,6 +15,7 @@
     <!-- Custom styles for this template -->
    <link href="css/clean-blog.min.css" rel="stylesheet">
     <!-- link css de l'image de fond -->
+
 
 <!DOCTYPE html>
 
@@ -66,51 +70,19 @@
 
     </form>
   </div>
-</nav>  
-
-<header>
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-      <!-- Slide One - Set the background image for this slide in the line below -->
-      <div class="carousel-item active" style="background-image: url('Img/image.jpg')">
-        <div class="carousel-caption d-none d-md-block">
-          <em><am><h1 class="display-3"><span style="color:White">Bienvenue</h1>
-          <p class="display-4"><span style="color:#00FFFF">Un billet pour l'alaska, l'aventure commence ici !</p>
-        </div>
-      </div>
-      <!-- Slide Two - Set the background image for this slide in the line below -->
-      <div class="carousel-item" style="background-image: url('https://source.unsplash.com/bF2vsubyHcQ/1920x1080')">
-        <div class="carousel-caption d-none d-md-block">
-          <h2 class="display-4">Second Slide</h2>
-          <p class="lead">This is a description for the second slide.</p>
-        </div>
-      </div>
-      <!-- Slide Three - Set the background image for this slide in the line below -->
-      <div class="carousel-item" style="background-image: url('https://source.unsplash.com/szFUQoyvrxM/1920x1080')">
-        <div class="carousel-caption d-none d-md-block">
-          <h2 class="display-4">Third Slide</h2>
-          <p class="lead">This is a description for the third slide.</p>
-        </div>
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-        <br>
-  </div>
-</header>
+</nav>      
+<br>                        <!--IMG -->
+  <img src="Img/image.jpg" class="img-fluid" alt="Un billet pour l'Alaska" style="height:500px; width:100%; display: block;">
 
 
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+ <br>
  <div class="container"> 
 
 <div class="jumbotron">
@@ -118,18 +90,16 @@
 
 if (isset($_SESSION['id']) AND isset($_SESSION['pseudo']))
 {
-    echo '<br><span style="color: orange;">'.$_SESSION['pseudo'].'</span>&nbsp'.'vous êtes connecté(e) !';
+    echo '<br><span style="color: orange;">'.$_SESSION['pseudo'].'</span>&nbsp'.'vous êtes connecter';
 }
 ?>
 
 <?php
 if (isset($_SESSION['id']) AND isset($_SESSION['admin']))
 {
-    echo '<br><span style="color: orange;">'.$_SESSION['admin'].'</span>&nbsp'.'vous êtes connecté(e) !';
+    echo '<br><span style="color: orange;">'.$_SESSION['admin'].'</span>&nbsp'.'vous êtes connecter';
 }
-?>
-  
-</h1>
+?>!</h1>
   <p class="lead">Bienvenue sur votre blog.Vous allez à présent pouvoir laisser libre cours a votre imagination !</p>
   <hr class="my-4">
   <p>Pourquoi ne pas commencer directement par créer votre premier article ?!.</p>
@@ -139,6 +109,8 @@ if (isset($_SESSION['id']) AND isset($_SESSION['admin']))
 
   </p>
 </div>
+
+
 
 
 </body>

@@ -1,4 +1,5 @@
-  <button="float: right;"class = ".bouton"><a href="http://localhost/tests/acceuil.php">Accueil</a>
+ <?php include('navbar.php'); ?>
+  <button="float: right;"class = ".bouton"><a href="http://localhost/tests/accueil.php">Accueil</a>
      </button>
 
 <!DOCTYPE html>
@@ -13,7 +14,7 @@
       <h1 style="text-align:center;"class = "bleu focus-in-expand4">Vous avez déjà un compte ? connecter vous !</h1>
    
 <?php 
-session_start(); ?>
+?>
 
  <!DOCTYPE html>
  <html>

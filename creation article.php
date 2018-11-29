@@ -1,5 +1,5 @@
-<?php session_start(); ?>
-  <button="float: right;"class = ".bouton"><a href="http://localhost/tests/acceuil.php">Accueil</a>
+<?php include('navbar.php'); ?>
+  <button="float: right;"class = ".bouton"><a href="http://localhost/tests/acceuil.php"></a>
      </button>
 
 <link href="bootstrap.css" rel="stylesheet">
@@ -48,7 +48,7 @@
             <label for="titre">Titre du billet</label>
         <br>
             <input type="text" name="titre"/>
-        
+  
         <br>
         <br>
             <label for="contenu">Votre billet</label>

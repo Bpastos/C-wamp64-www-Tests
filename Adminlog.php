@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+<?php include('navbar.php'); ?>
 <?php
 
 if (isset($_SESSION['id']) AND isset($_SESSION['admin']))

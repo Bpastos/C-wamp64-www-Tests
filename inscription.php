@@ -1,6 +1,5 @@
-<?php session_start(); ?>
-  <button="float: right;"class = ".bouton"><a href="http://localhost/tests/acceuil.php">Accueil</a>
-     </button>
+<?php include('navbar.php'); ?>
+
 <?php include 'db.php'; ?>
 
  <!DOCTYPE html>
@@ -53,7 +52,7 @@ $req->execute(array($_POST['pseudo'],$_POST['email'], $_POST['pass']));
               //last insert s'active sur la bdd pas sur $req
         $_SESSION['id'] = $bdd->lastInsertId();
         $_SESSION['pseudo'] = $_POST['pseudo'];
-        echo 'Vous êtes connecté !';
+        echo 'Vous êtes connecté ! <a href="http://localhost/tests/accueil.php">Retourner a l"accueil ?</a>';
 
 }
 
@@ -63,5 +62,5 @@ $req->execute(array($_POST['pseudo'],$_POST['email'], $_POST['pass']));
 </body>
  </html>
 
- postcomment 
+
 
