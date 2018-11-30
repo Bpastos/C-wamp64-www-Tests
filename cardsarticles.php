@@ -1,4 +1,4 @@
-<?php session_start()?>
+ <?php session_start()?>
 
 <center>
 <div class="p-3 my-3 text-white-50 bg-purple rounded shadow-sm ">
@@ -28,14 +28,6 @@ while ($donnees = $req->fetch())
 ?>
 
 
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Liste articles</title>
-
-</head>
-<body>
-  
 
 
 <p>
@@ -68,16 +60,16 @@ while ($donnees = $req->fetch())
     </p>
 </div>
 
+<p>
+    <?php
+    // On affiche le contenu du billet
+    echo nl2br(htmlspecialchars($donnees['contenu']));
+    ?>
+    <br />
+    <em><a href="commentaires.php?billet=<?php echo $donnees['id']; ?>">Commentaires</a></em>
+    </p>
+</div>
 <?php
 } // Fin de la boucle des billets
 $req->closeCursor();
 
-
-
-?>
-
-
-
-</body>
-</html>
-     
