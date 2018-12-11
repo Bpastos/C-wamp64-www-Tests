@@ -1,3 +1,4 @@
+<?php session_start() ?>   
   <button="float: right;"class = ".bouton"><a href="http://localhost/tests/acceuil.php">Accueil</a>
      </button>
 
@@ -12,8 +13,7 @@
 	<h2 style="text-align:center;"class = "focus-in-expand">Vous êtes sur la page de connexion de l'admin</h2>
       <h1 style="text-align:center;"class = "bleu focus-in-expand4">Vous avez déjà un compte ? connecter vous !</h1>
    
-<?php 
-session_start(); ?>
+
 
  <!DOCTYPE html>
  <html>
@@ -24,7 +24,7 @@ session_start(); ?>
  <hr />
  <br>
     <br>
-<form action="sessionadmin.php" method="post">
+<form action="connexionadmin.php" method="post">
 Pseudo : <input type="text" name="admin" value="<?php if(isset($_POST['admin'])) { echo $_POST['admin']; } ?>"/><br />
 
 Mot de passe : <input type="password" name="pass" value="<?php if(isset($_POST['pass'])) { echo $_POST['pass']; } ?>"/><br />
@@ -57,11 +57,11 @@ if (isset($_POST['admin']) and isset($_POST['pass']) and !empty($_POST['admin'])
         $_SESSION['id'] = $bdd->lastInsertId();
         $_SESSION['admin'] = $_POST['admin'];
         echo 'Vous êtes connecté !';
-
+        header('Location: admin.php');
 
 }
 
-header('Location: admin.php');
+
 
 
 

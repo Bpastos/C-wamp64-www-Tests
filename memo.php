@@ -37,4 +37,18 @@ if (isset($_SESSION['id']) AND isset($_SESSION['admin']))
     echo '<br><span style="color: orange;">'.$_SESSION['admin'].'</span>&nbsp'.'vous êtes connecter';
 }
 ?>
+
+
+<p>
+    <?php
+    // On affiche le contenu du billet
+    echo nl2br(htmlspecialchars($donnees['contenu']));
+    ?>
+    <br />
+    <em><a href="commentaires.php?billet=<?php echo $donnees['id']; ?>">Commentaires</a></em>
+    </p>
+</div>
+<?php
+} // Fin de la boucle des billets
+$req->closeCursor();
  

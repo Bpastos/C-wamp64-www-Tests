@@ -1,21 +1,14 @@
 <?php session_start(); ?>
-  <button="float: right;"class = ".bouton"><a href="http://localhost/tests/acceuil.php">Accueil</a>
+  <button="float: right;"class = ".bouton"><a href="http://localhost/tests/accueil.php">Accueil</a>
      </button>
      
 <?php
 
 // si le billet dans l'url n'est pas définit alor on stop le script 
 
-if (!isset($_GET['billet'])){
 
-    echo "mauvaise url";
-    exit();
-}
 
 ?>
-
-
-
 <!DOCTYPE html>
 <html>
     <head> 
@@ -96,11 +89,7 @@ while ($donnees = $req->fetch())
 <br>
 <div style="padding:3px; border:4px inset #2D3435; background-color:#894226;">
 <strong></strong>: 
- <div class="post-preview">
-            <a href="post.html">
-              <h2 class="post-title">
-                Science has not yet mastered prophecy
-              </h2>
+
  <p><strong> Ecrit par :&nbsp<font color="#00EAFF"><?php echo htmlspecialchars($donnees['author']); ?></font></strong>
 
      le <?php echo $donnees['comment_date'];  ?>  <button style="padding:3px; border:4px inset #2D3435; background-color:#white;" ><em><a href="http://localhost/tests/modifcom.php?id=<?php echo $donnees['id'];?>&billet=<?php echo $_GET['billet'];?>">(Modifier)</a></em> </button>
@@ -132,10 +121,4 @@ $req->closeCursor();
 ?>
 </body>
 </html>
-
-
-
-
-
-
-?>
+ 

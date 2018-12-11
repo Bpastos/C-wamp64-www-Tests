@@ -1,2 +1,42 @@
-Les cards change de couleur mais repettent 2 fois le meme messages.
-Supprimer l'onglet "laisser un commentaire " dans la bard de nav
+-Centrer les titres de la nav bar pour pas qu'il y est trop d'espace vide a droite apres la barre de recherche 
+- Verifier avec aymeric si j'ai bien retirer toutes les pages qu'il y avais en trop dans le projet
+-Demander si il n'est pas mieux de mettre le contenue du fichier "link" dans le fichier "liste articles"
+- clean-blog.min.css ?
+- clean-blog.css ?
+
+
+
+Refaire le css de la page de création de com 
+
+
+faire le tris dans les dossier inutile
+enlever la page de chat .
+
+
+!!
+Pour ne pas pouvoir se connecter avec n'imortre quelle identifiant il faut bien que les identifant sois enregistrer dahs la base de donnés
+
+au moment de la connexion du formulaire on va recuper tout les comptes ayant ce pseudo et le mot de passe qu ia été db2_table_privileges(
+
+	si on recupere au moin 1 resultat ça veux dire que le comtpe existe sinon on est pas connecter 
+	dans connexion et connexion admin 
+
+	Pouvouir se connecter avec 2 etat si gal a ? en temps que user ou egal a un pseudo et un mot de passe pre enregistrer = 2 
+
+
+
+Ne pas permettre de doublondans les formulaires 
+Mot de passe confirmation : enlever dans le form de connexion 
+
+si pseudo est egal a pseudo tu ne peux pas te connecter  
+
+
+
+Modifier un commentaire dans la page "admin" ne fonctionne pas car il n'a pas l'id en parametre 
+Supprimer ce bouton inutile
+
+mvc
+orienter objet 
+design
+Rajouter du contenu
+Verification administration

@@ -1,5 +1,5 @@
 <?php session_start(); ?>
-  <button="float: right;"class = ".bouton"><a href="http://localhost/tests/acceuil.php">Accueil</a>
+  <button="float: right;"class = ".bouton"><a href="http://localhost/tests/accueil.php">Accueil</a>
      </button>
 <?php
 

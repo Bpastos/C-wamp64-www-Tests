@@ -24,7 +24,7 @@ if (isset($_GET['id'])) {
 $request = $bdd->prepare('UPDATE comments SET report = 0 WHERE id = ?');
 //execute : variable qui remplace les points d'intérogattion
 $request->execute([$_GET['id']]);
-echo "Le commentaire ne sera plus afficher dans la liste des commentaire signaler";
+
 header("Location: commentaires.php?billet=".$_GET['billet']);
 
 }

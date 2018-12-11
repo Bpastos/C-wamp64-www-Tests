@@ -38,3 +38,7 @@ else // Il manque des paramètres, on avertit le visiteur
 }
 
 ?>
+
+
+
+

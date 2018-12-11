@@ -21,7 +21,7 @@ catch(Exception $e)
 }
 
 // On récupère les 5 derniers billets
-$req = $bdd->query('SELECT id,auteur, titre, contenu, DATE_FORMAT(date_creation, \'%d\%m\%Y à %Hh%imin%ss\') AS date_creation_fr FROM billets ORDER BY date_creation DESC LIMIT 0,5');
+$req = $bdd->query('SELECT id,auteur, titre, contenu, DATE_FORMAT(date_creation, \'%d\%m\%Y à %Hh%imin%ss\') AS date_creation_fr FROM billets ORDER BY date_creation DESC LIMIT 0,10');
 
 while ($donnees = $req->fetch())
 {
@@ -31,6 +31,7 @@ while ($donnees = $req->fetch())
 
 
 <p>
+
    <div class="center-div">
     <div class="container">
     <!-- Cards bleu -->
@@ -40,10 +41,16 @@ while ($donnees = $req->fetch())
  <div class="card-body">
     <h4 class="card-title">Auteur du post : <?php echo htmlspecialchars($donnees['auteur']); ?></h4>
     <p class="a.btn"><h4 class="card-title"><?php echo $donnees['contenu']; ?></h4>       </p></p>
+
   </div>
+<h4 class="card-title"><a href="commentaires.php?billet=<?php echo $donnees['id']; ?>"><em><span style="color: yellow;"> <font size="6"> <font face="Times New Roman">&nbsp Laisser un commentaire ?</font></font> <h6 class="mb-0 text-white lh-100"></h6></a></em></div>
+
 </div>
+
     <br/>
+
     </p>
+
 
 
 <p>
@@ -55,20 +62,16 @@ while ($donnees = $req->fetch())
     <h4 class="card-title">Auteur du post: <?php echo htmlspecialchars($donnees['auteur']); ?></h4>
     <p class="a.btn"><h4 class="card-title"><?php echo $donnees['contenu']; ?></h4>       </p>
   </div>
-</div>
-    <br />
-    </p>
-</div>
+<h4 class="card-title"><a href="commentaires.php?billet=<?php echo $donnees['id']; ?>"><em><span style="color: blue;"> <font size="6"> <font face="Times New Roman">&nbsp Laisser un commentaire ?</font></font> <h6 class="mb-0 text-white lh-100"></h6></a></em></div>
 
-<p>
-    <?php
-    // On affiche le contenu du billet
-    echo nl2br(htmlspecialchars($donnees['contenu']));
-    ?>
     <br />
-    <em><a href="commentaires.php?billet=<?php echo $donnees['id']; ?>">Commentaires</a></em>
     </p>
 </div>
+     
+       <?php
+    // On affiche le contenu du billet
+   ?>
+
 <?php
 } // Fin de la boucle des billets
 $req->closeCursor();

@@ -1,10 +1,4 @@
-
 <?php session_start(); ?>
-
-
-
-
-
 
 <?php
 
@@ -41,7 +35,7 @@ header('Location:accueil.php');
 
 
 
-<em><a href="http://localhost/tests/modifcom.php">Modifier un commentaire</a></em></button>-->
+<em><a href="http://localhost/tests/modifcom.php">Modifier un commentaire</a></em></button>
 
 <button>  <em><a href="http://localhost/tests/supcom.php">Supprimer un commentaire</a></em></button>
 

@@ -1,3 +1,4 @@
+<?php session_start()?>
 <?php include('navbar.php'); ?>
 <?php
 
@@ -31,7 +32,6 @@ if (isset($_SESSION['id']) AND isset($_SESSION['admin']))
 if (empty($_POST['id'])&& empty($_POST['pseudo']))
 {
 echo  "veuillez vous identifier pour acceder a la page d'administration" ;
-header('');
 
 }
    ?> 

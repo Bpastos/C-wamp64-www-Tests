@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>LINK</title>
-</head>
-<body>
-<h1 class="orange">Accueil</h1>
-</body>
-</html>
-
-<a href="http://localhost/tests/liste%20articles.php">
-<a href="http://localhost/tests/liste%20articles.php">
-<a href="http://localhost/tests/creation%20article.php">
+ <link href="bootstrap.css" rel="stylesheet">
+ <link href="style.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+     <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href="css/clean-blog.min.css" rel="stylesheet">

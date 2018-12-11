@@ -26,6 +26,6 @@ if (isset($_SESSION['id']) AND isset($_SESSION['admin']))
 	}
 	?>
 
-<a href="inscriptionadmin.php">S'inscrire ?</a> ou alors revenez sur la page d'accueil <a href="acceuil.php">Accueil </a>
+<a href="inscriptionadmin.php">S'inscrire ?</a> ou alors revenez sur la page d'accueil <a href="accueil.php">Accueil </a>
 </body>
 </html>
